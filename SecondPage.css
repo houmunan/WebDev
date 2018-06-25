@@ -1,4 +1,4 @@
-#title2 {
+﻿#title2 {
 	text-decoration: none;
 	border: none;
 	text-align: center;
@@ -20,7 +20,7 @@ h1 {
 
 h2	{
 	color: aquamarine;
-	font-family: 微软雅黑;
+	font-family: YaHei;
 	border-color: aquamarine;
 	border-width: 2px;
 	border-style: solid;
@@ -28,10 +28,10 @@ h2	{
 }
 
 body {
-	background: url(http://pic143.nipic.com/file/20171013/26058947_165117735037_2.jpg);
+	background-image:url(test2.jpg);
 	background-position: right center; 
 	background-attachment: fixed;
-	background-size: 400px 300px;
+	background-size: 400px;
 	/*铺满不拉伸*/
 	/*background-size: cover;*/
 	background-repeat: no-repeat;
