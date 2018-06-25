@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Basics</title>
+
+	<link rel="stylesheet" type="text/css" href="SecondPage.css">
+
+	<!-- 
+	<style type="text/css">
+		selector {
+			property: value;
+		}
+	</style>
+	 -->
+
+
+
+	 <!-- 
+	<style type="text/css">
+		h1 {
+			color: purple;
+		}
+
+	</style>
+	-->
+
+<!-- Specificity and Cascade用： -->
+<style type="text/css">
+	ul[id="Specificity and Cascade"] {
+		color: purple;
+	}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<p>
+	<a href="FirstPage.html" style="text-decoration: none;">
+		<button>Previous Page</button>
+	</a>
+
+	<a href="ThirdPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<h1 id="title2">TWO</h1>
+
+
+<!-- html里显示一段code -->
+<h1>html里显示一段code</h1>
+<pre>&lt;pre&gt;&lt;/pre&gt;</pre>
+
+
+<!-- 不使用CSS而直接使用HTML排版的旧方法 -->
+<h1>不使用CSS而直接使用HTML排版的旧方法</h1>
+<p>任何element里面加style attribution. 如：</p>
+
+<h1 style="color: red;">About Me</h1>
+
+<h4 style="color: purple; font-family: Arial; ">My Hobbies:</h4>
+<ul style="color: green;">
+	<li>Animations</li>
+	<li>Comics</li>
+	<li>Games</li>
+	<li style="color: gray; font-family: Arial">balabalabala...</li>
+</ul>
+
+<h1>新方法1：Style的东西放在HTML文件的head里</h1>
+<p>title后面即可：</p>
+
+<!-- 
+<style type="text/css">
+	selector {
+		property: value;
+	}
+</style>
+ -->
+
+<div style="color: red; font-family: Courier New; font-size: 12px;"><strong>
+<p>&lt;style type="text/css"&gt;</p>
+<p>&ensp;&ensp;&ensp;&ensp;selector {</p>
+<p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;property:&ensp;value;</p>
+<p>&ensp;&ensp;&ensp;&ensp;}</p>
+<p>&lt;/style&gt;</p>
+</strong></div>
+
+<h1>新方法2：在HTML文件的head里使用&lt;link&gt;</h1>
+<p>也是title后面即可：</p>
+<div style="color: red; font-family: Courier New; font-size: 12px;"><strong>
+	&lt;link rel="stylesheet" type="text/css" href="SecondPage.css"&gt;
+</strong></div>
+
+<!-- CSS的color系统 -->
+
+<h1>CSS的color系统(一百多种颜色名称；或#RRGGBB编码等，格式如下)</h1>
+<h3>CSS颜色取色板网站：</h3>
+
+<p><a href="http://colours.neilorangepeel.com/">http://colours.neilorangepeel.com/</a></p>
+
+<p>或者直接找color picker</p>
+
+<div style="color: red; font-family: Courier New; font-size: 12px;"><strong>
+<p>h1 {
+color: rgb(0,255,0);10进制的RGB
+}</p>
+<p>h1 {
+color: rgba(0,255,0,.6);这里最后一位是透明度，0 - 1。
+}</p>
+<p>h2 {
+color: #4B0082;16进制的RGB
+}</p>
+<p>h3 {
+color: #FF1493;
+}</p>
+<p>h4 {
+color: blueviolet;
+}</p>
+</strong></div>
+
+
+
+<!-- Color和Background和Border -->
+
+<h1>Color和Background和Border</h1>
+
+<pre>
+body {
+	background: url(http://3dprint.com/wp-content/uploads/2014/11/-Rainbow_Ocean__by_Thelmal.jpg)
+	background-position: right center; 
+	background-attachment: fixed;
+	background-size: 400px 300px;
+	/*铺满不拉伸*/
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	background-color: azure;
+}
+
+div{
+	background: rgba(0,0,0,.7)
+}
+</pre>
+
+
+<!-- 添加border< -->
+
+<h2>添加border</h2>
+<p>border-width,border-color,border-style,三者缺一不可</p>
+<p>或者用border一个：后面标明三个属性</p>
+
+<pre>
+h1 {
+    border-width: 2px;
+    border-style: solid;
+    /*border-style: dashed;*/
+    /*border-style: dotted;*/
+    /*border-style: double;*/
+    border-color: plum;
+}
+</pre>
+
+<p>或者</p>
+
+<pre>
+h1 {
+    border: 2px solid purple;
+}
+</pre>
+
+<p>三属性顺序随意。</p>
+
+
+<!-- 使用CSS Selectors方法设置单个element属性 -->
+<h1 id="CSS_Selectors">使用CSS Selectors方法设置单个element属性</h1>
+<p>Element Selector, ID Selector, Class Selector</p>
+<p>简单来说就是，单独的element用id因为不可重复；多个element用class因为可以重复</p>
+
+<h2>HTML例</h2>
+<pre>
+1, &lt;h1 id="title"&gt;不同特点的标题,例子&lt;/h1&gt;
+</pre>
+<pre>
+2, &lt;p class="highlight" &gt;Highlight all content here, part 1&lt;/p&gt;
+   &lt;div class="highlight" &gt;Highlight all content here, part 2&lt;/div&gt;
+</pre>
+
+<h2>CSS例</h2>
+<pre>
+1, #，井号。
+#title {
+	color: steelblue;
+	font-family: Fangsong Regular;
+	background: silver;
+	border: 3px slategray dotted;
+}
+2, .(点)，句号。
+.highlight {
+	color: rosybrown;
+	font-family: Comic Sans MS;
+	background: gold;
+	text-decoration: line-through;
+}
+</pre>
+
+<h2>效果：</h2>
+
+<h1 id="title">不同特点的标题,例子</h1>
+<p class="highlight" >Highlight all content here, part 1</p>
+<div class="highlight" >Highlight all content here, part 2</div>
+
+<!-- 总结 -->
+
+<h1>总结</h1>
+
+<h2>常用Selectors，三个</h2>
+
+<em><strong>Element:</strong></em>
+<pre>
+	li {
+
+}
+</pre>
+
+<em><strong>class:</strong></em>
+<pre>
+	.hello
+</pre>
+
+<em><strong>id:</strong></em>
+<pre>
+	#name {
+
+}
+</pre>
+
+<h2>其他重要Selectors</h2>
+
+<!-- Star -->
+<em><strong>* (star selector，通配符，选择页面全部)</strong></em>
+<pre>
+	* {
+
+}
+</pre>
+
+<!-- Descendent Selector -->
+<em><strong>Descendent Selectors, 两个及以上的Selectors, 洋葱式的大的包含小的</strong></em>
+<pre>
+	li a {
+	选择所有li里面的a的东西
+}
+	ul li a {
+	选择所有在ul里面的li的里面的a的东西
+}
+	li .hello{
+	选择所有在li里面的class是.hello的东西
+}
+</pre>
+
+<!-- Adjacent Selector -->
+<em><strong>Adjacent Selctor, 选择比如说所有h1后头跟着的h4或者li之类的，same level不是下级level</strong></em>
+<pre>
+	h4 + ul{
+	选择所有h4后面的ul的东西
+}
+</pre>
+
+<!-- Attribute Selector -->
+<em><strong>Attribute Selector, based on ANY attributes, like href, img, type, etc.</strong></em>
+<pre>
+	a[href="http://www.google.com"] {
+	选择所有链接指向google.com的元素，施加比如background: blue;
+}
+	input[type="checkbox"] {
+	background: blue;
+}
+</pre>
+
+<!-- nth of number -->
+<em><strong>nth of number, 选择每个element的第n个</strong></em>
+
+<pre>
+括号里3代表整页中第三个表，或者even代表所有第偶数个表:
+	ul:nth-of-type(3){
+	background: purple;
+}
+括号里3代表所有表中的第三行，或者even代表所有表中的偶数行：
+	li:nth-of-type(3){
+	background: purple;
+}
+</pre>
+
+
+<!-- 练习例子 -->
+<h1>练习例子参考</h1>
+<p>鼠标悬停hover，首字母first-letter，checkbox已选等</p>
+<p><a href="09-Selector-Exercise-Starter\selectorsExercise.html" target="_blank"><button>网页</button></a>css代码看文件</p>
+
+
+
+
+
+
+
+
+
+<!-- Specificity and Cascade -->
+<h1>Specificity and Cascade</h1>
+<!-- 效果看head里面的style。 -->
+<p>效果看head里面的style。选择比如ul则影响里面所有li，就是次级。当多个styles试图影响一个东西的时候，越specific也即越细的目标胜出，但似乎*会更厉害。</p>
+<h2><em><strong>* > #id > .class > 特定element</strong></em></h2>
+<p>详细见<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">MDN页面</a></p>
+<p><em>Sepcificity Calculator页面：</em>
+<a href="http://specificity.keegan.st" target="_blank"><button>网页</button></a>
+</p>
+
+<!-- 链接打开新窗口： -->
+<h2>链接打开新窗口：</h2>
+<pre>
+&lt;a href="网页链接" target="_blank"&gt;&lt;button&gt;网页&lt;/button&gt;&lt;/a&gt;
+</pre>
+
+<div >
+
+<ul id="Specificity and Cascade">
+	<li>John</li>
+	<li>Paul</li>
+	<li>George</li>
+	<li>Ringo</li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+<p>
+	<a href="FirstPage.html" style="text-decoration: none;">
+		<button>Previous Page</button>
+	</a>
+
+	<a href="ThirdPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+
+</body>
+</html>

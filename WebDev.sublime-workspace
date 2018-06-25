@@ -1,0 +1,785 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"font-st",
+				"font-style\tproperty"
+			],
+			[
+				"border",
+				"border-top\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "FirstPage.html",
+			"settings":
+			{
+				"buffer_size": 13093,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SecondPage.html",
+			"settings":
+			{
+				"buffer_size": 6467,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SecondPage.css",
+			"settings":
+			{
+				"buffer_size": 1127,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ThirdPage.html",
+			"settings":
+			{
+				"buffer_size": 6364,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ThirdPage.css",
+			"settings":
+			{
+				"buffer_size": 672,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "FourthPage.html",
+			"settings":
+			{
+				"buffer_size": 7670,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<title></title>\n\t<link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700\" rel=\"stylesheet\">\n<!-- ==================================================================================================== -->\n<style type=\"text/css\">\n\t\t\nh2 {\n\ttext-transform: capitalize;\n\tcolor: darkblue;\n\tfont-size: 2.0rem;\n}\n\nbody {\n\tmargin: 20px auto;\n\tborder: 20px #bdc3c7 solid;\n\tpadding: 20px;\n\tmax-width: 700px;\n\twidth: 80%;\n\tfont-family: \"Source Sans Pro\";\n}\n\n.date {\n\ttext-transform: uppercase;\n\tcolor: dodgerblue;\n\tfont-weight: 700;\n\tletter-spacing: 0.2rem;\n}\n\nh2 + div p:nth-of-type(1) {\n\tborder-left: 5px #bdc3c7 solid;\n\tpadding-left: 5px;\n}\n\n.post {\n\tmargin: 20px auto;\n}\n\nhr {\n\tborder: 1px solid #eeeeee;\n}\n\n</style>\n<!-- ==================================================================================================== -->\n</head>\n<!-- ==================================================================================================== -->\n<body>\n\n\n<div class=\"post\">\n<div class=\"date\">NOVEMBER 4 2018</div>\n<h2>Title</h2>\n<div class=\"article\">\n\n<p>Bacon ipsum dolor <span id=\"span1\">amet filet (50px)</span> mignon tri-tip <span id=\"span2\">strip steak (2.0em)</span> bacon meatball beef pork belly brisket hamburger chicken turducken pig alcatra boudin short ribs. Beef ribs sirloin jowl cupim, ribeye cow pork loin turkey filet mignon ball tip andouille. Turducken pork turkey cow alcatra, corned beef brisket meatloaf prosciutto pig pastrami buffalo. Bresaola turkey pork belly pancetta corned beef ham hock meatloaf turducken, meatball spare ribs short ribs. Pig tenderloin spare ribs fatback chicken frankfurter, tri-tip alcatra short ribs short loin pork belly doner buffalo picanha.</p>\n\n<p>Kevin tri-tip rump, cow hamburger andouille turkey beef ribs sirloin drumstick. Turkey fatback kielbasa t-bone buffalo cow. Flank alcatra turducken ham pig short ribs cupim t-bone ground round capicola. Prosciutto ham hock pork short ribs. Sausage venison biltong chuck, andouille beef ribs ground round ham picanha pancetta. Pancetta ribeye brisket corned beef turkey buffalo strip steak. Tenderloin ground round sirloin cupim, salami pork belly turkey bacon hamburger jowl shoulder short loin pig cow frankfurter.</p>\n</div>\n\n<hr>\n</div>\n\n\n\n\n\n<div class=\"post\">\n<div class=\"date\">NOVEMBER 4 2018</div>\n<h2>Another title</h2>\n<div class=\"article\">\n\n<p>Bacon ipsum dolor <span id=\"span1\">amet filet (50px)</span> mignon tri-tip <span id=\"span2\">strip steak (2.0em)</span> bacon meatball beef pork belly brisket hamburger chicken turducken pig alcatra boudin short ribs. Beef ribs sirloin jowl cupim, ribeye cow pork loin turkey filet mignon ball tip andouille. Turducken pork turkey cow alcatra, corned beef brisket meatloaf prosciutto pig pastrami buffalo. Bresaola turkey pork belly pancetta corned beef ham hock meatloaf turducken, meatball spare ribs short ribs. Pig tenderloin spare ribs fatback chicken frankfurter, tri-tip alcatra short ribs short loin pork belly doner buffalo picanha.</p>\n\n<p>Kevin tri-tip rump, cow hamburger andouille turkey beef ribs sirloin drumstick. Turkey fatback kielbasa t-bone buffalo cow. Flank alcatra turducken ham pig short ribs cupim t-bone ground round capicola. Prosciutto ham hock pork short ribs. Sausage venison biltong chuck, andouille beef ribs ground round ham picanha pancetta. Pancetta ribeye brisket corned beef turkey buffalo strip steak. Tenderloin ground round sirloin cupim, salami pork belly turkey bacon hamburger jowl shoulder short loin pig cow frankfurter.</p>\n</div>\n\n<hr>\n</div>\n\n\n\n\n\n</body>\n</html>\n\n<!-- \nborder color: #bdc3c7\ndate color: #3498db\nh2 color: #2c3e50\n -->\n\n\n\n\n<nav class=\"navbar navbar-inverse navbar-fixed-top\"> <!-- navbar-default 白色，inverse黑色 -->\n<div class=\"container\">\n    <div class=\"navbar-header\">\n\n        <!-- 这里的button是右侧折叠后的hamburger图标。需放在brand左边，就是header里面的最前面。 -->\n        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n            <span class=\"sr-only\">Toggle navigation</span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n            <span class=\"icon-bar\"></span>\n        </button>\n\n        <a href=\"#\" class=\"navbar-brand\"><i class=\"fas fa-book\"></i> Fourth Page</a>\n    </div>\n\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n        <ul class=\"nav navbar-nav\">\n            <li><a href=\"#\">__________</a></li>\n            <li><a href=\"#\">__________</a></li>\n            <li><a href=\"#\">__________</a></li>\n            <li><a href=\"#\">__________</a></li>\n            <li><a href=\"#\">__________</a></li>\n        </ul>\n        <ul class=\"nav navbar-nav navbar-right\">\n            <li><a href=\"ThirdPage.html\"><i class=\"fas fa-arrow-left\"></i></a></li>\n            <li><a href=\"FifthPage.html\"><i class=\"fas fa-arrow-right\"></i></a></li>\n        </ul>\n    </div>\n\n</div>\n</nav>",
+			"file": "Exercises/BlogExercise/blog.html",
+			"file_size": 3769,
+			"file_write_time": 131733707177635544,
+			"settings":
+			{
+				"buffer_size": 4982,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/BoxModel/BoxModel.css",
+			"settings":
+			{
+				"buffer_size": 641,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/squareImages/photoGrid.html",
+			"settings":
+			{
+				"buffer_size": 3035,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/BootstrapExercise/navbar.html",
+			"settings":
+			{
+				"buffer_size": 3876,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/squareImages/photos.css",
+			"settings":
+			{
+				"buffer_size": 533,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/BootstrapExercise/grid.html",
+			"settings":
+			{
+				"buffer_size": 2522,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/GridExercise/ImageGallery.html",
+			"settings":
+			{
+				"buffer_size": 5557,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Exercises/PurrfectMatch/Purrfect.html",
+			"settings":
+			{
+				"buffer_size": 5105,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/WebDev.sublime-project",
+		"/C/Users/Munan Hou/AppData/Local/Temp/Rar$DIa0.659/app.css",
+		"/C/Users/Munan Hou/AppData/Local/Temp/Rar$DIa0.658/app.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/GridExercise/07-Image-Gallery/ImageGallery.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/GridExercise/07-Image-Gallery/gallery.md",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/BootstrapExercise/navbar.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/BootstrapExercise/bootstrap.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/bootstrap/js/bootstrap.bundle.js",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/bootstrap/css/bootstrap.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/TicTacToe/TicTacToe.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/BlogExercise/12-Blog-Solution/12_Blog_Solution/blog.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/BlogExercise/12-Blog-Solution/12_Blog_Solution/blog.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/FirstPage.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/BoxModel/BoxModel.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/squareImages/07_ImageBlog1/imageLinks.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/squareImages/squareImages.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/squareImages/squareImages.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/Exercises/TicTacToe/TicTacToe.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/BoxModel/TicTacToe.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/BoxModel/TicTacToe.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/BoxModel.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/BoxModel.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/09-Selector-Exercise-Starter/selectors.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/09-Selector-Exercise-Starter/solution.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/09-Selector-Exercise-Starter/selectorsExercise.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/SecondPage.css",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/draft.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/quiz1.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/test/page2.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/pokemon/quiz2.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/pokemon/Pokemondata/__MACOSX/._pokemondata.txt",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/test/page 2.html",
+		"/C/Users/Munan Hou/OneDrive - The University of Colorado Denver/Shared with Everyone/Web Develop/test/page 2"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"span",
+			"\n<!--",
+			"col-md-6",
+			"...\\",
+			"目录",
+			"1.67",
+			">",
+			"<",
+			"中",
+			"check",
+			"checked"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"1.66",
+			"&gt;",
+			"&lt;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "FirstPage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "SecondPage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5366,
+								5367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "SecondPage.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								339
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ThirdPage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ThirdPage.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								87
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "FourthPage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1527,
+								1527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Exercises/BlogExercise/blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4982,
+								4982
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1777.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Exercises/BoxModel/BoxModel.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Exercises/squareImages/photoGrid.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Exercises/BootstrapExercise/navbar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2199,
+								2043
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Exercises/squareImages/photos.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Exercises/BootstrapExercise/grid.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2414,
+								2257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Exercises/GridExercise/ImageGallery.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2151,
+								1183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Exercises/PurrfectMatch/Purrfect.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1035,
+								1012
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "WebDev.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 5
+	}
+}

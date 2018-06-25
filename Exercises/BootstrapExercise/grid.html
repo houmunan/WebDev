@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="../../Bootstrap/3.3.7/css/bootstrap.css">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border-bottom: 1px solid grey;
+			border-right: 1px solid grey;
+			text-align: center;
+			height: 50px;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- ==================================== -->
+<!--             OBJECTIVES               -->
+<!-- 1. Understand Purpose of Grid System -->
+<!-- 2. Understand the 4 different sizez  -->
+<!-- 3. Write Nested Grids                -->
+<!-- ==================================== -->
+
+
+
+<div class="container">      <!-- class="container" -->
+	<div class="row">        <!-- class="row" 这个是一行-->
+		<!-- <div class="col-lg-2 pink">COL LG 2</div> -->
+		<!-- <div class="col-lg-8 pink">COL LG 8</div> -->
+		<!-- <div class="col-lg-2 pink">COL LG 2</div> -->
+	</div>
+	<div class="row">        <!-- class="row" 又加了另一行-->
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 pink">COL LG 1</div>
+	</div>
+	<div class="row">        <!-- 省略了col-lg-3，自动得到了和md一样的效果。-->
+		<div class="col-md-3 col-sm-6 pink">SQUARE 01</div>		
+		<div class="col-md-3 col-sm-6 pink">SQUARE 02</div>		
+		<div class="col-md-3 col-sm-6 pink">SQUARE 03</div>		
+		<div class="col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 pink">HALF 01</div>
+				<div class="col-md-6 col-sm-12 pink">HALF 02</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

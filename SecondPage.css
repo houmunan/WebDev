@@ -1,0 +1,65 @@
+#title2 {
+	text-decoration: none;
+	border: none;
+	text-align: center;
+	color: black;
+}
+
+h1 {
+	color: #FF70CE;
+	font-family: 微软雅黑;/*只作用于英文内容的话无法识别，作用内容必须有中文字才行。*/
+	border-color: plum;
+	border-width: 2px;
+	border-style: solid;
+	/*border-style: dashed;*/
+	/*border-style: dotted;*/
+	/*border-style: double;*/
+
+	/*border: 2px plum solid;*/
+}
+
+h2	{
+	color: aquamarine;
+	font-family: 微软雅黑;
+	border-color: aquamarine;
+	border-width: 2px;
+	border-style: solid;
+
+}
+
+body {
+	background: url(http://pic143.nipic.com/file/20171013/26058947_165117735037_2.jpg);
+	background-position: right center; 
+	background-attachment: fixed;
+	background-size: 400px 300px;
+	/*铺满不拉伸*/
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	background-color: azure;
+}
+
+#CSS_Selectors {
+	color: maroon;
+	font-family: Fangsong Regular;
+	background: limegreen;
+	border: 5px seagreen solid;
+}
+
+#title {
+	color: steelblue;
+	font-family: Fangsong Regular;
+	background: silver;
+	border: 3px slategray dotted;
+}
+
+.highlight {
+	color: rosybrown;
+	font-family: Comic Sans MS;
+	background: gold;
+	text-decoration: line-through;
+}
+
+/** {
+	color: #888888;
+}
+*/

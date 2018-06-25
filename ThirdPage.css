@@ -1,0 +1,50 @@
+#title {
+	text-decoration: none;
+	border: none;
+	text-align: center;
+	color: black;
+}
+
+h1	{
+	color: #FF70CE;
+	font-family: 微软雅黑;
+	border-color: plum;
+	border-width: 2px;
+	border-style: solid;
+	/*border-style: dashed;*/
+	/*border-style: dotted;*/
+	/*border-style: double;*/
+
+	/*border: 2px plum solid;*/
+}
+
+h2	{
+	color: aquamarine;
+	font-family: 微软雅黑;
+	border-color: aquamarine;
+	border-width: 2px;
+	border-style: solid;
+}
+
+body {
+	font-family: "Arial"; /*如果字体不是阿拉伯数字开头，则不加“双引号”也可以*/
+	margin: auto 10%;
+}
+
+
+#span1 {
+	font-size: 50px; /*字体变为50px*/
+}
+#span2 {
+	font-size: 2.0em /*字体变为原本2.0倍*/
+}
+
+/*使用：Google Fonts字体：*/
+
+#loremipsum1 {
+	font-family: Indie Flower;
+}
+
+pre {
+	
+}

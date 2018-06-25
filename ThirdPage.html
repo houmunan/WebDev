@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Intermediate</title>
+	<link rel="stylesheet" type="text/css" href="ThirdPage.css">
+<!-- 引用：Google Fonts字体： -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700|Indie+Flower">
+
+</head>
+<body>
+
+<p>
+	<a href="SecondPage.html" style="text-decoration: none;">
+		<button>Previous Page</button>
+	</a>
+
+	<a href="FourthPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<h1 id="title">THREE</h1>
+
+<h1>内容</h1>
+<pre>
+front-family
+front-size
+front-weight
+line-weight
+text-align
+text-decoration
+</pre>
+
+
+
+
+<h1>Fonts Demo Page, 字体、排版</h1>
+
+<h2>Generate lorem ipsum text, 随机没含义的英文段落：</h2>
+<a href="http://www.theultralinx.com/2013/08/10-hilarious-lorem-ipsum-generators-web-designers/" target="_blank"><button>10个Generating工具网站</button></a>
+
+<div id="loremipsum1">
+<p>Bacon ipsum dolor <span id="span1">amet filet (50px)</span> mignon tri-tip <span id="span2">strip steak (2.0em)</span> bacon meatball beef pork belly brisket hamburger chicken turducken pig alcatra boudin short ribs. Beef ribs sirloin jowl cupim, ribeye cow pork loin turkey filet mignon ball tip andouille. Turducken pork turkey cow alcatra, corned beef brisket meatloaf prosciutto pig pastrami buffalo. Bresaola turkey pork belly pancetta corned beef ham hock meatloaf turducken, meatball spare ribs short ribs. Pig tenderloin spare ribs fatback chicken frankfurter, tri-tip alcatra short ribs short loin pork belly doner buffalo picanha.</p>
+
+<p>Kevin tri-tip rump, cow hamburger andouille turkey beef ribs sirloin drumstick. Turkey fatback kielbasa t-bone buffalo cow. Flank alcatra turducken ham pig short ribs cupim t-bone ground round capicola. Prosciutto ham hock pork short ribs. Sausage venison biltong chuck, andouille beef ribs ground round ham picanha pancetta. Pancetta ribeye brisket corned beef turkey buffalo strip steak. Tenderloin ground round sirloin cupim, salami pork belly turkey bacon hamburger jowl shoulder short loin pig cow frankfurter.</p>
+</div>
+
+
+
+
+
+
+<!-- front-family -->
+
+<h2>front-family</h2>
+<p>CSS Font Stack: <a href="http://www.cssfontstack.com" target="_blank"><button>CSS Font Stack</button></a></p>
+
+<pre>
+#loremipsum1 {
+    font-family: "Arial"; /*如果字体不是阿拉伯数字开头，则不加“双引号”也可以*/
+}
+</pre>
+
+
+
+<!-- front-size -->
+
+<h2>front-size</h2>
+<p>既可用font-size连px决定字体大小，也可用font-size连em决定字体对于原本大小的倍数大小</p>
+
+<pre>
+(段落里的两个词用&lt;span&gt;&lt;/span&gt;括起来了，作用和div相同，单纯选定这两个词。)
+#span1 {
+    font-size: 50px; /*字体变为50px*/
+}
+#span2 {
+    font-size: 2.0em /*字体变为原本2.0倍:一般设置body用px定基础大小，再用em定其他所有h1,h2,p,span,div等。*/
+}
+</pre>
+
+
+
+<!-- front-weight -->
+
+<h2>front-weight</h2>
+
+<pre>
+#loremipsum1 {
+	font-weight: bold;/*加粗*/
+	             normal;/*不加粗*/
+	             100;/*取值100 - 800，只对某些字体有效。*/
+}
+</pre>
+
+
+<!-- line-weight -->
+
+<h2>line-height</h2>
+<pre>
+#loremipsum1 {
+	line-height: 1.5;/*1.5倍行距*/
+}
+</pre>
+
+
+
+<!-- text-align -->
+
+<h2>text-align</h2>
+<pre>
+#title {
+	text-aligh: center;/*left,right*/
+}
+</pre>
+
+
+
+<!-- text-decoration -->
+
+<h2>text-decoration</h2>
+<pre>
+#loremipsum1 {
+	text-decoration: underline;/*文字加效果*/
+	                 line-through;
+}
+</pre>
+
+
+
+<!-- 使用Google Fonts (其他也行)： -->
+
+<h2>使用Google Fonts (其他也行)：</h2>
+<pre>
+在html的head里添加引用：
+&lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700|Indie+Flower"&gt;
+在css文件里使用字体：直接使用即可。
+</pre>
+<p><strong>Google Fonts可以用，不用科学上网，但是生成引用需要科学上网。</strong></p>
+
+
+
+
+
+
+
+
+<!-- The Box Model -->
+
+<h1>The Box Model: Positioning of the Elements</h1>
+
+
+<!-- Box Model概念 -->
+
+<h2>Box Model 定义:</h2>
+<p>"In a document, each element is represented as a rectangular box. In CSS, each of these rectangular boxes is described using the standard box model. Each box has four edges: the <b>Margin edge</b>, <b>border edge</b>, <b>padding edge</b>, and <b>content edge.</b>" -MDN</p>
+<ul>
+	<li>Content</li>
+	<li>Padding</li>
+	<li>Border</li>
+	<li>Margin</li>
+</ul>
+
+<h2>练习页面：</h2>
+<p>
+<a href="Exercises/BoxModel/BoxModel.html" style="text-decoration: none;" target="_blank">
+	<button>Box Model</button>
+</a>
+</p>
+
+<p>
+<a href="Exercises/TicTacToe/TicTacToe.html" style="text-decoration: none;" target="_blank">
+	<button>Tic Tac Toe</button>
+</a>
+</p>
+
+<p>
+<a href="Exercises/squareImages/photoGrid.html" style="text-decoration: none;" target="_blank">
+	<button>Square Images</button>
+</a>
+</p>
+
+<p>
+<a href="Exercises/BlogExercise/blog.html" style="text-decoration: none;" target="_blank">
+	<button>Blog Exercise</button>
+</a>
+<pre>
+注意文章标题用h2，因为h1需要尽量少用。
+一起使用max-width和width。
+&lt;hr&gt;添加横线。style参考：<a href="https://css-tricks.com/examples/hrs/">CSS-TRICKS.COM</a>>
+</pre>
+</p>
+
+<p>
+<a href="Exercises/BootstrapExercise/grid.html" style="text-decoration: none;" target="_blank">
+	<button>Grids Starter</button>
+</a>
+<pre>BootstrapExercise</pre>
+</p>
+
+<p>
+<a href="Exercises/BootstrapExercise/navbar.html" style="text-decoration: none;" target="_blank">
+	<button>Navbar Starter</button>
+</a>
+<pre>
+BootstrapExercise
+相关参考：<a href="http://getbootstrap.com/docs/3.3/components/">Bootstrap Components</a>>
+</pre>
+</p>
+
+<p>
+<a href="Exercises/GridExercise/ImageGallery.html" style="text-decoration: none;" target="_blank">
+	<button>Image Gallery</button>
+</a>
+</p>
+
+<p>
+<a href="Exercises/PurrfectMatch/Purrfect.html" style="text-decoration: none;" target="_blank">
+	<button>Purrfect Match</button>
+</a>
+<pre>shadow相关,背景相关.</pre>
+</p>
+
+
+<h2>常用链接：</h2>
+
+<a href="http://www.w3school.com.cn/tags/tag_hr.asp" style="text-decoration: none;" target="_blank">
+	<button>&lt;hr&gt;水平线标签</button>
+</a>
+
+<!-- Bootstrap -->
+<h1>Bootstrap</h1>
+<p>
+<a href="https://getbootstrap.com/" style="text-decoration: none;" target="_blank">
+	<button>Bootstrap Website</button>
+</a>
+</p>
+
+
+
+
+
+
+
+<h1>Mobile Device相关</h1>
+<p>If you want your bootstrap styled website to be responsive on mobile then be sure to add the following meta tag to your &lt;head&gt;  element, above the &lt;title&gt;  tag:</p>
+<pre>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+<p>
+	<a href="SecondPage.html" style="text-decoration: none;">
+		<button>Previous Page</button>
+	</a>
+
+	<a href="FourthPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+</body>
+</html>

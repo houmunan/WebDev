@@ -1,0 +1,532 @@
+<!-- "html" + Tab -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- add comment加评论快捷键: ctrl + / -->
+	<!-- metadata goes in head，只有文件信息在head，其他全在body -->
+	<title>HTML Basics</title>
+	<link rel="stylesheet" type="text/css" href="FirstPage.css">
+
+<style type="text/css">
+	@font-face {
+		font-family: 'MingLiU';
+		src: url('fonts/mingliu.ttc');
+	}
+
+	h1 {
+		color: #FF70CE;
+		font-family: YaHei;
+	}
+
+	body {
+		background: #FFFAFA;
+	}
+
+	#title {
+		text-align: center;
+		color: black;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+<p>
+	<a href="SecondPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<h1 id="title">ONE</h1>
+
+
+<!-- content goes in the body -->
+<h1>This is my first tag!(header)</h1>
+<p>
+<!-- <b></b> = <strong></strong>, <i></i> = <em></em>(emphasize) -->
+12312312 <b>31321</b> <strong>23123123132123</strong> 12312313212312 3123132123 <i>1231231321231</i> <em>23123132123</em> 123123132123123 1231321 <u>23123123</u> 13212312 31 23132123 1231231321 23123123132 1231231 23132123123 12313 21231231 231321231 23 123132123 12312313 212312 3123132123 123 12313212312312 3132 123123
+</p>
+<p>123123123132</p>
+<p><b>123123123132</b></p>
+<h2>This is my second tag!</h2>
+
+<!-- 选择所在文件目录： -->
+<h1>选择所在文件目录：</h1>
+<pre>
+上层目录文件：../file.ext
+网页自己所在目录文件：file.ext
+上层目录文件夹里另一个下层文件夹里的文件：../folder/file.ext
+</pre>
+
+
+
+<!-- html里显示一段code -->
+<h1>html里显示一段code</h1>
+<pre>&lt;pre&gt;&lt;/pre&gt;</pre>
+
+<!-- 一个产生0/1随机数的按钮： -->
+<p>
+<button id="ButtonA"onclick="ClickA()">Random Button</button> Click to generate a 0/1 random number.
+<script language="javascript">
+    function ClickA(){
+      alert(
+        Math.round(
+          Math.random()
+        )
+      )
+    }
+  </script>
+</p>
+
+<!-- 一个跳转到下级目录网页的按钮： -->
+<p>
+	<a href="test/page2.html" style="text-decoration: none;">
+		<button>Go to Page 2</button>
+	</a>
+ Click to go to page 2
+<span>Click to go to page 2</span>
+</p>
+
+<head>
+	<h1>This is my third tag!</h1>
+</head>
+
+
+	<ul>
+		<!-- Unordered List, UL, Bullet point Lists-->
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+	</ul>
+
+	<ol>
+		<!-- Ordered Lists OL i.e. 1. 2. 3. ...-->
+		<li>List Item 3</li>
+		<li>List Item 4</li>
+	</ol>
+</body>
+
+</html>
+<h3>This is my fourth tag!</h3>
+<h6>This is the sixth, which is smallest header</h6>
+
+<!-- 快速拷贝上一行：Ctrl + Shift + D -->
+
+注意：子list的位置应该在&ltli&gt&lt/li&gt的内容中间（显示尖括号：用& lt & gt）
+<!-- 注意：子list的位置应该在&ltli&gt&lt/li&gt的内容中间（显示尖括号：用& lt & gt） -->
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+“lorem” + tab 会自动输入以上一段例子段落。
+<!-- “lorem” + tab 会自动输入以上一段例子段落。 -->
+
+<!-- 同时多行光标输入的方法 -->
+<h1>同时多行光标输入的方法</h1>
+<p>按住ctrl点击多个位置即可</p>
+
+<!-- 插入一张图片 -->
+<h1>插入图片</h1>
+<p>插入图片，width和height设置大小,只填一个则等比例缩放</p>
+<div align="center">
+	<a href="http://houmunan.com" style="text-decoration: none;">
+		<img width="200" src="pictures/asuna.jpg">
+	</a>
+</div>
+
+<div align="center">
+	<a href="http://houmunan.com" style="text-decoration: none;">
+		<img src="pictures/asuna.jpg">
+	</a>
+</div>
+
+<h2>插入一个表格</h2>
+<!-- 插入一个表格 -->
+<p>thead 和 tbody只是为了code比较好懂。</p>
+<p>另外&lt;table&gt;里面一般不用border，而是在css里设定</p>
+<table border="1">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Breed</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Rusty</td>
+			<td>2</td>
+			<td>Mutt</td>
+		</tr>
+		<tr>
+			<td>Wyatt</td>
+			<td>13</td>
+			<td>Golden</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>插入&lt;form&gt;tag和&lt;Input&gt;tag来收集数据</h1>
+<p>&lt;form&gt;tag是一整个输入表格，里面有许多不同attributes的&lt;Input&gt;tag来收集数据</p>
+<p>form里面的action指向数据发送位置,比如http://wikipedia.org或者本地位置/data/...</p>
+<p>method则是规定是入数据库的data(method="POST"类型)还是返回用的data(method="GET"类型)</p>
+<p>label则用来标记</p>
+<form action="/data" method="post">
+	<!-- All inputs will go in here -->
+	<h4>text类型</h4>
+	<p><input type="text" name="text" placeholder="username"></p>
+	<h4>password类型</h4>
+	<p><input type="password" name="password" placeholder="password"></p>
+	<h4>date类型</h4>
+	<p><input type="date" name="date"></p>
+	<h4>color类型</h4>
+	<p><input type="color" name="color"></p>
+	<h4>file类型</h4>
+	<p><input type="file" name="file"></p>
+	<h4>checkbox复选框类型,checked表示默认已选</h4>
+	<p><input type="checkbox" name="checkbox" checked></p>
+	<h4>radio单选框类型</h4>
+	<p><input type="radio" name="radio"></p>
+	<h4>一个叫submit的按钮</h4>
+	<p><button>Submit</button></p>
+	<h4>Submit类型的input</h4>
+	<p><input type="Submit" name="Submit"></p>
+</form>
+
+<!-- form一例 -->
+<h1>form的例子</h1>
+<p>input内容包含在label里面</p>
+<h2>Login</h2>
+<form action="http://houmunan.com" method="POST">
+
+	<label>
+		Username:
+		<input type="text" name="username" placeholder="username">
+	</label>
+
+	<label>
+		Password:
+		<input type="text" name="password" placeholder="password">
+	</label>
+
+	<input type="submit" name="submit">
+</form>
+
+
+<h1>form的alternative的写法例子</h1>
+<p>input和label两个分开的，用“for”“id”连起来(name和id冲突所以尽量只用一个，id为优，id是全网页全局，name是在每个form里特别)</p>
+<p>两者区别看网页：<a href="https://zhidao.baidu.com/question/105242746.html"><em>百度知道：HTML中属性ID和属性NAME有何区别？</em></a></p>
+<h2>Login</h2>
+<form action="http://houmunan.com" method="POST">
+
+	<label for="username">Username:</label>
+	<input id="username" type="text" placeholder="username" required>
+
+	<label for="password">Password:</label>
+	<input id="password" type="text" placeholder="password">
+
+	<label for="email">E-mail:</label>
+	<input id="email" type="email" placeholder="email" required>
+
+	<input type="submit" name="submit">
+</form>
+
+<h1>Radio button, Select tag, Textarea tag</h1>
+<h1>单选框, 下拉框, 文字输入区域</h1>
+
+<input type="radio" id="radio">
+<input type="checkbox" id="checkbox">
+
+
+<!-- Radio Button例子,Select下拉框例子,textarea输入文字框例子 -->
+<h1>Radio Button例子,Select下拉框例子,textarea输入文字框例子</h1>
+
+<p>用Form把多个radio button括在一起。这里需要用name，并且所有都用一样的name，以此表示这几个选项属于一个问题</p>
+<p>Do you prefer cats of dogs?</p>
+<p>Select里面也要加上name才行.</p>
+<p>input里搭配value,option里也搭配value</p>
+<!-- input里搭配value,option里也搭配value -->
+
+<form>
+	<p>
+	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+	<label for="dogs">Dogs</label>
+	<input name="petChoice" id="cats" type="radio" value="CATS">
+	<label for="cats">Cats</label>
+	<input name="petChoice" id="birds" type="radio" value="BIRDS">
+	<label for="birds">Birds</label>
+	</p>
+
+	<p>
+	<label for="color">Color:</label>
+	<select name="color" id="color">
+		<option value="rd">Red</option>
+		<option value="org">Orange</option>
+		<option value="yl">Yellow</option>
+	</select>
+	</p>
+
+	<p>
+	<label for="mood">Mood:</label>
+	<select name="mood" id="mood">
+		<option value="happy">:)</option>
+		<option value="neutral">:|</option>
+		<option value="sad">:(</option>
+	</select>
+	</p>
+
+	<p>
+	<textarea name="paragraph" rows="5" cols="50">Write Something Here!</textarea>
+	</p>
+
+	<button>Go!</button>
+
+</form>
+<p>注意:如果一个&lt;button&gt;是一个&lt;form&gt;中的最后一行，则他自动代表提交</p>
+<!-- 如果一个&lt;button&gt;是一个&lt;form&gt;中的最后一行，则他自动代表提交 -->
+
+<h1></h1>
+<p>What's your favorite color?</p>
+<form>
+
+</form>
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<p>
+	<a href="SecondPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>
+
+
+
+<p>&ensp;</p>
+<p>==========================================================================</p>
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+<p>==========================================================================</p>
+<p>&ensp;</p>
+
+
+
+
+
+
+
+
+
+
+<!-- QUIZ 1 -->
+<h1>QUIZ 1</h1>
+<h1><b>Things I've Learned</b></h1>
+
+<h2><b>Internet Basics</b></h2>
+<ol>
+	<li>HTTP Requests</li>
+	<li>IP Address</li>
+	<li>Server</li>
+</ol>
+
+<h2><b>HTML</b></h2>
+<ul>
+	<li>Stands for <strong>Hyper Text Markup Languages</strong></li>
+	<li>Lots of Tags</li>
+	<ul>
+		<li>Boilerplate</li>
+		<ol>
+			<li>Doctype</li>
+			<li>HTML</li>
+			<li>Head</li>
+			<ol>
+				<li>Title</li>
+			</ol>
+			<li>Body</li>
+		</ol>
+		<li>Headings</li>
+		<li>Paragraph</li>
+		<li><em>em</em></li>
+		<li><strong>strong</strong></li>
+	</ul>
+</ul>
+</html>
+
+答案：
+注意：子list的位置应该在&ltli&gt&lt/li&gt的内容中间（显示尖括号：用& lt & gt），如下
+
+<h2><b>HTML</b></h2>
+<ul>
+	<li>Stands for <strong>Hyper Text Markup Languages</strong></li>
+	<li>Lots of Tags</li>
+	<ul>
+		<li>Boilerplate
+			<ol>
+				<li>Doctype</li>
+				<li>HTML</li>
+				<li>Head
+					<ol>
+						<li>Title</li>
+					</ol>
+				</li>
+				<li>Body</li>
+			</ol>
+		</li>
+		<li>Headings</li>
+		<li>Paragraph</li>
+		<li><em>em</em></li>
+		<li><strong>strong</strong></li>
+	</ul>
+</ul>
+
+<!-- QUIZ 2 -->
+<h1>QUIZ 2</h1>
+<h1>First Gen Pokemon Chart</h1>
+
+<table border="1">
+
+<thead>
+	<tr style="color:purple;">
+		<th style="color:red">Image</th>
+		<th>Name</th>
+		<th>Type</th>
+		<th>Evolves Into</th>
+	</tr>
+
+</thead>
+	
+<tbody>
+	<tr>
+		<th><img width="100" src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></th>
+		<th>Bulbasaur</th>
+		<th>Grass/Poison</th>
+		<th><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></th>
+	</tr>
+	<tr>
+		<th><img width="100" src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></th>
+		<th>Charmander</th>
+		<th>Fire</th>
+		<th><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></th>
+	</tr>
+	<tr>
+		<th><img width="100" src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"></th>
+		<th>Squirtle</th>
+		<th>Water</th>
+		<th><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></th>
+	</tr>
+</tbody>
+
+</table>
+
+
+
+
+<!-- QUIZ 3 -->
+<h1>QUIZ 3 Register</h1>
+<form>
+
+	<div>
+	<label for="firstname">First Name:</label>
+	<input type="text" id="firstname" name="firstname" placeholder="John" required>
+	<label for="lastname">Last Name:</label>
+	<input type="text" id="lastname" name="lastname" placeholder="Smith" required>
+	</div>
+	
+	<div>
+
+	<input type="radio" name="genderChoice" id="male" value="M" required>
+	<label for="male">Male</label>
+	<input type="radio" name="genderChoice" id="female" value="F" required>
+	<label for="female">Female</label>
+	<input type="radio" name="genderChoice" id="other" value="OTH" required>
+	<label for="other">Other</label>
+	</div>
+
+	<div>
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" placeholder="your email" required>
+	<label for="password">Password:</label>
+	<!-- <input type="password" name="password" id="password" placeholder="your password" minlength="5" maxlength="10" required> -->
+	<input type="password" name="password" id="password" placeholder="your password" pattern=".{5,10}" title="5 to 10 characters required" required>
+	</div>
+	这里maxlength和minlength过时了，应该用pattern attributes在input里面。
+	<!-- 这里maxlength和minlength过时了，应该用pattern attributes在input里面。 -->
+
+	<div>
+	<label for="birthday">Birthday:</label>
+	<input type="date" name="birthday" id="birthday" required>
+	</div>
+
+	<div>
+	<label>
+
+		Birthday:
+
+		<select name="DD" id="DD">
+		<option value="0">Day</option>
+		<option value="01">1</option><option value="02">2</option>
+		<option value="03">3</option><option value="04">4</option>
+		<option value="05">5</option><option value="06">6</option>
+		<option value="07">7</option><option value="08">8</option>
+		<option value="09">9</option><option value="10">10</option>
+		<option value="11">11</option><option value="12">12</option>
+		<option value="13">13</option><option value="14">14</option>
+		<option value="15">15</option><option value="16">16</option>
+		<option value="17">17</option><option value="18">18</option>
+		<option value="19">19</option><option value="20">20</option>
+		<option value="21">21</option><option value="22">22</option>
+		<option value="23">23</option><option value="24">24</option>
+		<option value="25">25</option><option value="26">26</option>
+		<option value="27">27</option><option value="28">28</option>
+		<option value="29">29</option><option value="30">30</option>
+		<option value="31">31</option>
+		</select>
+
+		<select name="MM" id="MM">
+		<option value="0">Month</option>
+		<option value="01">Jan</option><option value="02">Feb</option>
+		<option value="03">Mar</option><option value="04">Apr</option>
+		<option value="05">May</option><option value="06">Jun</option>
+		<option value="07">Jul</option><option value="08">Aug</option>
+		<option value="09">Sep</option><option value="10">Oct</option>
+		<option value="11">Nov</option><option value="12">Dec</option>
+		</select>
+
+		<select name="YYYY" id="YYYY">
+		<option value="0">Year</option>
+		<option value="1950">1950</option>
+		
+		</select>
+
+	</label>
+
+	
+	
+	</div>
+
+	<div>
+	<label for="terms">I agree to the terms and conditions</label>
+	<input type="checkbox" name="terms" id="terms" required>
+	</div>
+
+	<button>Submit</button>
+
+</form>
+
+
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<p>
+	<a href="SecondPage.html" style="text-decoration: none;">
+		<button>Next Page</button>
+	</a>
+</p>

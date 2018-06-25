@@ -1,0 +1,38 @@
+p {
+
+/*Content - Widthand Height*/
+
+width: 200px;/*50%意思是，这个p在body里，所以是body宽度的50%。*/
+height: 40px;
+
+/*Border*/
+
+border: 2px solid blue;
+/*border-top*/
+/*border-left*/
+/*border-right*/
+/*border-bottom*/
+/*border-...*/
+
+
+/*Padding: 在Border和Element之间的距离,四周都有，围着一圈儿。*/
+
+padding: 10px;
+/*padding-top*/
+/*padding-left*/
+/*padding-right*/
+/*padding-bottom*/
+/*padding-...*/
+
+
+/*Margin: Space outside the border.*/
+
+margin: 0 auto 0 auto; auto会自动居中.
+/*margin: 0 auto; 此处0是左右,auto是上下.效果同上.*/
+/*margin: 50px 20px; 作用同上,50px上下,20px左右.*/
+/*margin: 1px 20px 1px 20px; 依序为：上、右、下、左。Padding和Border同样可以如此.*/
+/*margin: 1px; 四周margin均为1px*/
+/*margin-...*/
+
+
+}

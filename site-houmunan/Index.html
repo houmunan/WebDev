@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SILHOUETTE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- 字体Lato -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- ==================================================================================================== -->
+<style type="text/css">
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=2700&q=80);
+    background-size: cover;
+    background-position: 50% 30%;;
+    background-repeat: no-repeat;
+    font-family: Lato;
+}
+
+h1, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+hr {
+    width: 400px;
+    /*border-top和border-bottom 构成阴影的线条*/
+/*    border-top: 1px solid #F8F8F8; 
+    border-bottom: 1px solid rgba(0,0,0,0.2); */
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#content {
+    text-align: center;
+    padding-top: 35%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+
+</style>
+<!-- ==================================================================================================== -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar-default 白色，inverse黑色 -->
+<div class="container">
+    <div class="navbar-header">
+
+        <!-- 这里的button是右侧折叠后的hamburger图标。需放在brand左边，就是header里面的最前面。 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> SILHOUETTE</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="../Web Develop/FirstPage.html">WebDev Notes</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Nothing</a></li>
+            <li><a href="#">Said Nothing</a></li>
+        </ul>
+    </div>
+
+</div>
+</nav>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col_lg_12">
+            <div id="content">
+                <h1>Somewhat a Snapshot</h1>
+                <h3>Basics</h3>
+                <hr>
+                <a href=""><button class="btn btn-default btn-md"><i class="far fa-heart"></i> Take a look</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Basics</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700|Indie+Flower">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- ==================================================================================================== -->
+    <style type="text/css">
+
+        /*添加字体文件*/
+        /*@font-face { 
+        font-family: 'MingLiU';
+        src: url('fonts/mingliu.ttc');
+        }*/
+
+        html {
+            height: 100%;
+            background: url(https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=2700&q=80);
+            background-attachment:fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .navbar-inverse {
+            background: #2c3e50;
+            color: #ecf0f1;
+        }
+       
+        .jumbotron {
+            color: #2c3e50;
+            background: #ecf0f1;
+        }
+        .belly {
+            background-color: rgba(255,255,255,0.6);
+            border-radius: 10px;
+            border: 3px solid white;
+            padding: 10px 10px;
+        }
+
+        body {
+            padding-top: 70px;
+            padding-bottom: 20px;
+            background-color: rgba(255,255,255,0);
+        }
+
+        .h1  {
+            background-color: rgba(0,0,0,0.6);
+            width: auto;
+            color: crimson;
+            font-family: 微软雅黑;
+            /*border-color: white;*/
+            /*border-width: 3px;*/
+            /*border-style: solid;*/
+            padding-left: 10px;
+            margin: auto -10px;
+            margin-bottom: 10px;
+            /*border-style: dashed;*/
+            /*border-style: dotted;*/
+            /*border-style: double;*/
+
+            /*border: 2px plum solid;*/
+        }
+
+        .h2  {
+            background-color: rgba(255,255,255,0.6);
+            color: blue;
+            font-family: 微软雅黑;
+            /*border-color: white;*/
+            /*border-width: 2px;*/
+            /*border-radius: 10px;*/
+            /*border-style: solid;*/
+            padding-left: 10px;
+            margin: auto -10px;
+            margin-bottom: 10px;
+        }
+
+        .alert_red {
+            color: red;
+        }
+    </style>
+<!-- ==================================================================================================== -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-default 白色，inverse黑色 -->
+<div class="container">
+    <div class="navbar-header">
+
+        <!-- 这里的button是右侧折叠后的hamburger图标。需放在brand左边，就是header里面的最前面。 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <a href="#" class="navbar-brand"><i class="fas fa-book"></i> Fourth Page</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#01">3 JavaScript Methods</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="ThirdPage.html"><i class="fas fa-arrow-left"></i></a></li>
+            <li><a href="FifthPage.html"><i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../houmunan/index.html"><i class="fas fa-home"></i></a></li>
+        </ul>
+    </div>
+
+</div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1><i class="fab fa-js-square"></i> 4. JavaScript Basics</h1> <!-- i是icon -->
+        <p>Notes of JavaScripts, Udemy Lesson</p>
+    </div>
+</div>
+
+<div class="container"><div class="belly">
+<!-- <p><div class="btn-group" role="group" aria-label="...">
+    <a href="ThirdPage.html" style="text-decoration: none;">
+        <button type="button" class="btn btn-default btn-xs"><i class="fas fa-arrow-left"></i></button>
+    </a>
+    <a href="FifthPage.html" style="text-decoration: none;">
+        <button type="button" class="btn btn-default btn-xs"><i class="fas fa-arrow-right"></i></button>
+    </a>
+</div></p>
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p> -->
+
+<!-- 正文 -->
+<div>
+
+<h1 class="h1" id="01">JavaScript Methods</h1>
+<h2 class="h2">alert, prompt, console.log</h2>
+<pre>
+alert
+prompt
+console.log
+
+//这个是double-slash，双逆斜杠代表注释，comment。
+
+//clear 清除屏幕
+clear()
+
+//alert 弹小信息窗口
+alert("Hello there!!!")
+alert(198 * 345)
+
+//console.log 仅仅把这个东西表达在console里，用户看不见，自己后台用的。
+console.log("hello from the console")
+
+//prompt 弹框，里面有输入框，用来采集讯息，并store这个东西：
+prompt("what is your name?")
+
+> var userName = prompt("What is your name?")
+< undefined //输入了"Munan"
+> userName
+< "Munan"
+</pre>
+
+
+<h2 class="h2">Writing JS in a Separate File</h2>
+<p>新建一个script.js文件，放在html一样的地址，里面该写啥写啥</p>
+<p>链接html文件和js文件：</p>
+<pre>
+&lt;script src="wrong.js"&gt;&lt;/script&gt; //错误js名字，这个刷新页面后console里会显示红字警告 <span class="alert_red">(x) Failed to load resource: net::ERR_FILE_NOT_FOUND</span>
+&lt;script src="script.js"&gt;&lt;/script&gt; //正确,自动运行，比如弹窗什么的。
+</pre>
+<p>比如应用如下：</p>
+<pre>
+index.html:
+&lt;script src="script.js"&gt;&lt;/script&gt;                   //先在html里加入此行，链接js文件
+script.js:
+var userName = prompt("What is your name?")         //script.js里，load页面或刷新时立即运行，采集名字。
+alert("Nice to meet you, " + userName)              //采集完名字后随即弹窗问候。
+console.log("Also great to meet you, " + userName)  //在console.log里默默再问候一遍，无提示。
+</pre>
+
+<h1 class="h1">JavaScript Methods</h1>
+<p>gsfagibauvbudahfvbiauervnudhnvaiunvuhgnreua</p>
+<h2 class="h2">JavaScript Methods JavaScript Methods JavaScript Methods</h2>
+<p>gsfagibauvbudahfvbiauervnudhnvaiunvuhgnreua</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&ensp;</p><p>&ensp;</p><p>&ensp;</p>
+
+<p><div class="btn-group" role="group" aria-label="...">
+    <a href="ThirdPage.html" style="text-decoration: none;">
+        <button class="btn btn-default btn-xs"><i class="fas fa-arrow-left"></i> PREV</button>
+    </a>
+    <a href="FifthPage.html" style="text-decoration: none;">
+        <button class="btn btn-default btn-xs">NEXT <i class="fas fa-arrow-right"></i></button>
+    </a>
+</div></p>
+
+</div>
+<!-- 正文结束 -->
+
+
+
+</div></div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
